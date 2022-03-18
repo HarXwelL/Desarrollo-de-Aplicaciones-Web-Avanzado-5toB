@@ -1,15 +1,12 @@
-const calcularPresupuesto = (cantPersonas) => {
-    let costo = 95;
-    if (cantPersonas > 300) {
-        costo = 75;
-        return cantPersonas * costo;
-    } else if (cantPersonas > 200) {
-        costo = 85;
-        return cantPersonas * costo;
+let m=0;
+const mayor = (a, b, c) => {
+    if ( a > b && a > c) {
+        m = a;
+    } else if (b > a && b > c) {
+        m = b;
     } else {
-        return cantPersonas * costo;
+        m = c;
     }
+    return m;
 };
-
-console.log(calcularPresupuesto(250));
-
+console.log(mayor(4,7,8));
